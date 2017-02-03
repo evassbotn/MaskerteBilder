@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Vi har benyttet title og icon for å sette inn tittel og fanebildet -->
+	<title> Mission: Impossible </title>
+	<link rel="icon" href="teat.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style type="text/css">
+		.fyll { /*Bakgrunnsbilde varierer fra side til side, og legges derfor inn direkte i html-doc*/
+			background-image: url("mi_1.jpg");
+		}
+	</style>
+	<script type="text/javascript" src="buttons.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="fyll">
+			<div class="header">
+				<div class="mainbar">
+					<ul>
+						<li> <a href="index.html"> Hjemme </a></li>
+						<li> <a href="filmer.html"> Filmer </a></li>
+						<li> <a href="#"> Forum </a></li>
+					</ul>
+				</div><!--.mainbar-->
+
+				<div class="søkefelt">
+					<form><input type="text" name="søk" placeholder="Søk..."></form>
+				</div><!--.søkefelt-->
+
+				<div class="menyKnapp">
+					<ul>
+						<li id="meny"> <a href="#"> Kaphekoff </a> 
+							<div class="dropned">
+								<a href="#"> Mine lån </a>
+								<a href="#"> Min ønskeliste </a>
+								<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
+							</div>
+						</li>
+					</ul>
+				</div><!--.menyKnapp-->
+			</div><!--.header-->
+
+		</div><!--.fyll-->
+
+		<div class="beneath">
+			<p class="Overskrift"> Mission: Impossible (1996) </p>
+			<div class="content">
+				Utgivelsesår: 1996 <br>
+				Land: USA <br>
+				Lengde: 105 minutter <br>
+				Regissør: Brian De Palma <br>
+				Norsk tittel: Mission: Impossible <br>
+				Sjanger: Action, Eventyr, Thriller <br>
+				Cast: Tom Cruise, Jon Voight, Emmanuelle Beart, Jean Reno, Ving Rhames, Kristin Scott Thomas, Vanessa Redgrave, Henry Czerny
+
+			</div>
+			<div class="content1">
+				Tom Cruise spiller Ethan Hunt, hemmelig agent som uskyldig blir anklaget for drapene på sin egen etterretningsgruppe. Han er på flukt fra regjeringens leiemordere, bryter seg inn i CIA's mest uinntrengelige hvelv, klamrer seg til taket på et lyntog i fart, - alltid ett skritt foran sine fiender er han i ferd med å avsløre den sjokkerende sannheten!
+			</div>
+
+		</div><!--.beneath-->
+	</div><!--.container-->
+</body>
+</html>
+
+
+

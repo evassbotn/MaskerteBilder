@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Vi har benyttet title og icon for å sette inn tittel og fanebildet -->
+	<title> Filmer </title>
+	<link rel="icon" href="teat.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style type="text/css">
+		.fyll { /*Bakgrunnsbilde varierer fra side til side, og legges derfor inn direkte i html-doc*/
+			background-image: ?;
+		}
+	</style>
+	<script type="text/javascript" src="buttons.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="fyll">
+			<div class="header">
+				<div class="mainbar">
+					<ul>
+						<li> <a href="index.html"> Hjemme </a></li>
+						<li> <a href="filmer.html"> Filmer </a></li>
+						<li> <a href="#"> Forum </a></li>
+					</ul>
+				</div><!--.mainbar-->
+
+				<div class="søkefelt">
+					<form><input type="text" name="søk" placeholder="Søk..."></form>
+				</div><!--.søkefelt-->
+
+				<div class="menyKnapp">
+					<ul>
+						<li id="meny"> <a href="#"> Kaphekoff </a> 
+							<div class="dropned">
+								<a href="#"> Mine lån </a>
+								<a href="#"> Min ønskeliste </a>
+								<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
+							</div>
+						</li>
+					</ul>
+				</div><!--.menyKnapp-->
+			</div><!--.header-->
+			
+		</div><!--.fyll-->
+
+		<div class="beneath">
+			<div class="film-container">
+				<a href="MI.html">       <img class="film-item"  src="mi_3.png">   </a>
+				<a href="Lunchbox.html"> <img class="film-item1" src="lb2.jpg">    </a>
+				<a href="theint.html">   <img class="film-item2" src="theint2.jpg"></a>
+			</div>
+		</div><!--.fyll-->
+	</div><!--.container-->
+</body>
+</html>

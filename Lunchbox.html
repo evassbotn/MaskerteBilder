@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Vi har benyttet title og icon for å sette inn tittel og fanebildet -->
+	<title> The Lunchbox </title>
+	<link rel="icon" href="teat.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style type="text/css">
+		.fyll { /*Bakgrunnsbilde varierer fra side til side, og legges derfor inn direkte i html-doc*/
+			background-image: url("lb.jpg");
+		}
+	</style>
+	<script type="text/javascript" src="buttons.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="fyll">
+			<div class="header">
+				<div class="mainbar">
+					<ul>
+						<li> <a href="index.html"> Hjemme </a></li>
+						<li> <a href="filmer.html"> Filmer </a></li>
+						<li> <a href="#"> Forum </a></li>
+					</ul>
+				</div><!--.mainbar-->
+
+				<div class="søkefelt">
+					<form><input type="text" name="søk" placeholder="Søk..."></form>
+				</div><!--.søkefelt-->
+
+				<div class="menyKnapp">
+					<ul>
+						<li id="meny"> <a href="#"> Kaphekoff </a> 
+							<div class="dropned">
+								<a href="#"> Mine lån </a>
+								<a href="#"> Min ønskeliste </a>
+								<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
+							</div>
+						</li>
+					</ul>
+				</div><!--.menyKnapp-->
+			</div><!--.header-->
+
+		</div><!--.fyll-->
+
+		<div class="beneath">
+			<p class="Overskrift"> The Lunchbox </p>
+			<div class="content">
+				Utgivelsesår: 2013 <br>
+				Land: India <br>
+				Lengde: 105 minutter <br>
+				Regissør: Ritesh Batra <br>
+				Norsk tittel: The Lunchbox <br>
+				Sjanger: Romanse, Komedie <br>
+				Cast: Irrfan Khan, Lillete Dubey, Nawazuddin Sidiqui, Nimrat Kaur
+
+			</div>
+			<div class="content1">
+				Indiske The Lunchbox er en sjelden filmperle som har begeistret et stort internasjonalt publikum med sin originalitet og varme. Filmen vant den prestisjetunge prisen Critics Week Viewers Choice Award under Cannes-festivalen i 2013
+
+				I Mumbais travle hverdag bringer en feillevert lunsj to meget forskjellige skjebner sammen. Den noe stillfarne enkemannen Saajan, snart pensjonist, mottar ved en feil lunsjen som husmoren Ila har laget til sin mann. Forvekslingen blir starten på en humoristisk og rørende brevutveksling i lunsjboksene. Saajan og Ila finner et frirom for å utrykke sine innerste tanker, og de små brevene blir etter hvert fylt med varme følelser og spiren til en mulig fremtid hvor lykken skal finnes.
+
+				Regissør Ritesh Batra, som selv er oppvokst i Mumbai, skildrer både det realistiske og det fantastiske med humor og varme. Rollen som Saajan spilles av Irrfan Kahn, kjent fra kritikerroste filmer som Slumdog Millionaire og Life Of Pi.
+			</div>
+
+		</div><!--.beneath-->
+	</div><!--.container-->
+</body>
+</html>

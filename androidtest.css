@@ -1,6 +1,23 @@
 @media (max-width: 650px) {
 	.header {
-		/*Det er header som er problemet på mindre skjermer. Kaphekoff og etter hvert søkefelt forsvinner ut til høyre.
-			Kan kanskje løses ved å flytte søkefelt ned og forhøye header.*/
+		font-size: 3.2vw;
+
+		height: auto;
+	}
+
+	.søkefelt {
+		display: none;
+	}
+
+	.søkefelt2 {
+		display: flex;
+	}
+
+	.logo {
+		font-size: 5vw;
+	}
+
+	#teat {
+		height: 30vw;
 	}
 }

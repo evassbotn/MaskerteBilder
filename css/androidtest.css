@@ -3,6 +3,7 @@
 		font-size: 3.2vw;
 
 		height: auto;
+		flex-direction: column;
 	}
 
 	.søkefelt {

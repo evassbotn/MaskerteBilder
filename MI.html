@@ -5,6 +5,7 @@
 	<title> Mission: Impossible </title>
 	<link rel="icon" href="pics/teat.png">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/androidtest.css">
 	<style type="text/css">
 		.fyll { /*Bakgrunnsbilde varierer fra side til side, og legges derfor inn direkte i html-doc*/
 			background-image: url("pics/mi_1.jpg");
@@ -23,15 +24,17 @@
 						<li> <a href="index.html"> Hjemme </a></li>
 						<li> <a href="filmer.html"> Filmer </a></li>
 						<li> <a href="#"> Forum </a></li>
+						
 					</ul>
 				</div><!--.mainbar-->
 
-				<div class="søkefelt">
-					<form><input type="text" name="søk" placeholder="Søk..."></form>
-				</div><!--.søkefelt-->
-
 				<div class="menyKnapp">
 					<ul>
+						<li>
+							<div class="søkefelt"> <!--Flyttet hit for androidtest-->
+								<form><input type="text" name="søk" placeholder="Søk..."></form>
+							</div><!--.søkefelt-->
+						</li>
 						<li id="meny"> <a href="#"> Kaphekoff </a> 
 							<div class="dropned">
 								<a href="#"> Mine lån </a>

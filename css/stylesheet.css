@@ -88,12 +88,6 @@ body, html {
 	color: white;
 }
 
-.mainbar { /* Nye regler med androidtest*/
-	flex-grow: 1;
-	min-width: 230px;
-	max-width: 20%;
-}
-
 .mainbar ul, .menyKnapp ul, .dropned {
 	list-style-type: none;
 
@@ -117,7 +111,7 @@ body, html {
 }
 
 .søkefelt {
-	margin-right: 4vw;
+	margin-left: 6rem;
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
@@ -140,7 +134,7 @@ body, html {
 }
 
 .søkefelt input[type=text]:focus {
-	width: 100%; /* Endre regel for androidtest */
+	width: 30%;
 }
 
 .menyKnapp {
@@ -174,6 +168,17 @@ body, html {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+}
+
+.mobilMeny * {
+	display: none;
+}
+
+#menyIkon {
+	background-image: url("pics/icon-menu.svg");
+
+	width: 40px;
+	height: 40px;
 }
 /*
 Her slutter header-elementer---------------------------------------------------------

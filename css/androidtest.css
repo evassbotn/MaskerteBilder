@@ -3,9 +3,31 @@
 		font-size: 3.2vw;
 
 		height: auto;
+		flex-direction: row; 
+	}
+
+	.mainbar, .mainbar *, #meny * {
+		display: none;
+	}
+
+	.mobilMeny, a#menyIkon {
+		background-color: red;
+		
 		display: block;
 	}
 
+	.søkefelt {
+		margin: 0;
+	}
+
+	.logo {
+		font-size: 5vw;
+	}
+
+	#teat {
+		height: 30vw;
+	}
+/*
 	.mainbar {
 		width: 60vw;
 		min-width: auto;
@@ -34,13 +56,5 @@
 
 	.søkefelt input[type=text]:hover {
 		width: 50vw;
-	}
-
-	.logo {
-		font-size: 5vw;
-	}
-
-	#teat {
-		height: 30vw;
-	}
+	}*/
 }

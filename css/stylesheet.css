@@ -396,15 +396,16 @@ Her slutter fyll-elementer------------------------------------------------------
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: white;
-	align-items: baseline;	
+	background-color: rgba(0,0,0,0.5);
+	align-items: baseline;
+	padding: 0 4px;
 }
 .movieText {
 	flex-basis: 60vh;
 	align-self: center;
 	text-align: center;
-	font-family: "Bebas Kai";
-
+	font-family: "Bebas Kai";	
+	color: white;
 }
 .movieText a{
 	text-decoration: none;
@@ -421,5 +422,6 @@ Her slutter fyll-elementer------------------------------------------------------
 a span {
 	font-family: Impact;
 	text-decoration: none;
-	color: black;
+	color: #997A92;
+	font-size: 3vh;
 }

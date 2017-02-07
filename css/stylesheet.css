@@ -388,4 +388,27 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-size: 3em;
 	text-align: center;
 }
+.movieContent{
+	display: flex;
+	height: 50vh;
+	width: 100vw;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: white;	
+}
+.movieText {
+	flex-basis: 50vh;
+	align-self: flex-start;
 
+}
+.moviePicture{
+	align-self: flex-start;
+	height: 30vh;
+	width: 50vh;
+	flex-basis: 50vh;
+}
+#oneHead {
+	font-style: "Bebas Kai";
+	font-size: 10vh;
+}

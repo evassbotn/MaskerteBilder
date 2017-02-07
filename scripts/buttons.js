@@ -6,3 +6,7 @@ function loggUtInn() {
 		link.innerHTML = "Logg ut";
 	}
 }
+
+function sprettMeny() {
+	var drop = document.getElementById("mobildrop");
+}

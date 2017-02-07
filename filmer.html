@@ -28,14 +28,13 @@
 					</ul>
 				</div><!--.mainbar-->
 
+				<div class="søkefelt"> <!--Flyttet hit for androidtest-->
+					<form><input type="text" name="søk" placeholder="Søk..."></form>
+				</div><!--.søkefelt-->
+
 				<div class="menyKnapp">
 					<ul>
-						<li>
-							<div class="søkefelt"> <!--Flyttet hit for androidtest-->
-								<form><input type="text" name="søk" placeholder="Søk..."></form>
-							</div><!--.søkefelt-->
-						</li>
-						<li id="meny"> <a href="#"> Kaphekoff </a> 
+						<li class="meny" id="kaphe"> <a href="#"> Kaphekoff </a> 
 							<div class="dropned">
 								<a href="#"> Mine lån </a>
 								<a href="#"> Min ønskeliste </a>
@@ -44,6 +43,21 @@
 						</li>
 					</ul>
 				</div><!--.menyKnapp-->
+				<div class="mobilMeny">
+					<a href="#" id="menyIkon"><img src="pics/menu-512.png"></a>
+					<ul>
+						<li> <a href="index.html"> Hjemme </a></li>
+						<li> <a href="filmer.html"> Filmer </a></li>
+						<li> <a href="#"> Forum </a></li>
+						<li class="meny"> <a href="#"> Kaphekoff </a> 
+							<div class="dropned">
+								<a href="#"> Mine lån </a>
+								<a href="#"> Min ønskeliste </a>
+								<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
+							</div>
+						</li>
+					</ul>
+				</div><!--.mobilMeny-->
 			</div><!--.header-->
 			
 		</div><!--.fyll-->
@@ -54,7 +68,7 @@
 				<a href="Lunchbox.html"> <img class="film-item1" src="pics/lb2.jpg">    </a>
 				<a href="theint.html">   <img class="film-item2" src="pics/theint2.jpg"></a>
 			</div>
-		</div><!--.fyll-->
+		</div><!--.beneath-->
 	</div><!--.container-->
 </body>
 </html>

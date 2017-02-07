@@ -5,6 +5,7 @@
 		font-size: 3.2vw;
 
 		height: auto;
+		min-height: 0;
 		flex-direction: row; 
 		justify-content: flex-end;
 	}
@@ -33,6 +34,8 @@
 	}
 
 	.mobilMeny, #menyIkon, #menyIkon img {	
+		margin: 1px;
+
 		display: flex;
 	}
 

@@ -14,9 +14,7 @@ body, html {
 	margin: 0 auto;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -85,6 +83,7 @@ body, html {
 .header a {
 	list-style-type: none;
 	text-decoration: none;
+	font-variant-caps: small-caps;
 	color: white;
 }
 
@@ -105,9 +104,9 @@ body, html {
 }
 
 .mainbar li:hover {
-	font-size: 25px;
-	-webkit-transition-duration: 0.1s;
-	transition-duration: 0.1s;
+	font-size: 22px;
+	-webkit-transition-duration: 0.05s;
+	transition-duration: 0.05s;
 }
 
 .søkefelt {

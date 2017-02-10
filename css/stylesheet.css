@@ -65,22 +65,14 @@ body, html {
 	width: 100%;
 	max-width: 1600px;
 	border-radius: 0 0 10px 10px;
-
-	/*display: -webkit-box;
+	
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
+	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;*/
-	display: flex;
-	flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 #upperHead {
@@ -198,7 +190,10 @@ body, html {
 	color: white;
 
 	display: none;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 #menyIkon img {
@@ -217,9 +212,15 @@ body, html {
 	margin: 4px 0;
 	margin-left: -4px;
 
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 @media (max-width: 650px) {
@@ -234,6 +235,8 @@ body, html {
 	.søkefelt {
 		margin: 0;
 
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
 		flex-grow: 1;
 	}
 
@@ -241,7 +244,9 @@ body, html {
 		margin: 0;
 		width: 100%;
 
-		flex-grow: 1;
+		-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+        flex-grow: 1;
 	}
 
 	.søkefelt input[type=text]:focus {
@@ -253,8 +258,13 @@ body, html {
 	}
 
 	.mobilMeny * {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+        flex-direction: column;
 	}
 
 	#mobildrop {
@@ -264,6 +274,8 @@ body, html {
 	.mobilMeny, #menyIkon, #menyIkon img {	
 		margin: 1px;
 
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -480,19 +492,32 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-align: center;
 }
 .movieContent{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100vh;
 	width: 70vw;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	background-color: rgba(0,0,0,0.5);
-	align-items: baseline;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
 	padding: 0 4px;
 }
 .movieText {
-	flex-basis: 60vh;
-	align-self: center;
+	-ms-flex-preferred-size: 60vh;
+	    flex-basis: 60vh;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	text-align: center;
 	font-family: "Bebas Kai";	
 	color: white;
@@ -501,7 +526,8 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-decoration: none;
 }
 .moviePicture{
-	align-self: flex-start;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
 	height: 30vh;
 
 }
@@ -516,20 +542,31 @@ a span {
 	font-size: 3vh;
 }
 .indexContent{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 60vh;
 	width: 80vw;
-	flex-direction: column;
-	align-content: center; 
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-line-pack: center;
+	    align-content: center; 
+	-ms-flex-pack: distribute; 
+	    justify-content: space-around;
 }
 .indexPicture{
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	width: 15vw;
 	height: auto;
 }
 .indexText{
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	font-family: "Bebas Kai";
 	font-size: 6vh;
 }

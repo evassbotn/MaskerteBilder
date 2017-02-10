@@ -1,7 +1,7 @@
 body, html {
-	background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
-	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);
-
+	/*background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
+	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);*/
+	background: url('pics/blaa.jpg');
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -427,25 +427,55 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 .movieContent{
 	display: flex;
-	height: 50vh;
-	width: 100vw;
+	height: 100vh;
+	width: 70vw;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: flex-start;
-	background-color: white;	
+	justify-content: space-between;
+	background-color: rgba(0,0,0,0.5);
+	align-items: baseline;
+	padding: 0 4px;
 }
 .movieText {
-	flex-basis: 50vh;
-	align-self: flex-start;
-
+	flex-basis: 60vh;
+	align-self: center;
+	text-align: center;
+	font-family: "Bebas Kai";	
+	color: white;
+}
+.movieText a{
+	text-decoration: none;
 }
 .moviePicture{
 	align-self: flex-start;
 	height: 30vh;
-	width: 50vh;
-	flex-basis: 50vh;
+
 }
 #oneHead {
 	font-style: "Bebas Kai";
 	font-size: 10vh;
+}
+a span {
+	font-family: Impact;
+	text-decoration: none;
+	color: #997A92;
+	font-size: 3vh;
+}
+.indexContent{
+	display: flex;
+	height: 60vh;
+	width: 80vw;
+	flex-direction: column;
+	align-content: center; 
+	justify-content: space-around;
+}
+.indexPicture{
+	align-self: center;
+	width: 15vw;
+	height: auto;
+}
+.indexText{
+	align-self: center;
+	font-family: "Bebas Kai";
+	font-size: 6vh;
 }

@@ -181,7 +181,7 @@ body, html {
 	border-radius: 10px;
 }
 
-#meny:hover .dropned {
+.meny:hover .dropned {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -219,6 +219,155 @@ Her slutter header-elementer----------------------------------------------------
 Her slutter fyll-elementer---------------------------------------------------------
 */
 
+#allcontent{
+
+}
+
+
+#filmList{
+        position: absolute;
+	left: 50%;
+	margin-right: -50%;
+    -webkit-transform: translate(-50%, 50%);
+	
+	transform: translate(-50%, 50%);
+    margin-top: -5%;
+    background-color: black;
+	box-shadow: 0px 0px 10px 10px black;
+	opacity: 0.65;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Bebas Kai";
+	min-height: 60px;
+	width: 100%;
+	max-width: 1600px;
+	border-radius: 10px 10px 10px 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+    
+}
+
+
+.meny a{
+    list-style-type: none;
+	text-decoration: none;
+	color: white;
+
+}
+
+.dropOpp {
+	background-color: black;
+	box-shadow: 0px 8px 16px 0px black;
+	position: absolute;
+    margin-left: -2%;
+	text-align: center;
+	border-radius: 10px;
+	display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.dropOpp a {
+	padding: 15px 15px;
+	text-decoration: none;
+	display: block;
+	border-radius: 10px;
+    
+}
+
+.meny:hover .dropOpp {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    bottom: 100%;
+}
+
+
+#rutineDrop{
+    background-color: black;
+	box-shadow: 0px 8px 16px 0px black;
+	position: absolute;
+    margin-left: -15%;
+	text-align: center;
+	border-radius: 10px;
+	display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#rutineDrop p{
+    padding: 15px 15px;
+	text-decoration: none;
+	display: block;
+	border-radius: 10px;
+}
+.meny:hover #rutineDrop {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    bottom: 100%;
+    
+}
+
+#rutineText{
+    font-size: 1.5vh;
+	text-align: center;
+	font-family: "Bebas Kai";	
+	color: white;
+}
+#rutineContent{
+    display: flex;
+    height: 42vh;
+	width: 20vw;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(0,0,0,0.5);
+	align-items: baseline;
+	padding: 0 4px;
+}
+.miniContent{
+	display: flex;
+	height: 10vh;
+	width: 20vw;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(0,0,0,0.5);
+	align-items: baseline;
+	padding: 0 4px;
+}
+
+
+.miniPicture{
+    height: 10vh;
+    max-width: 12vh;
+}
+.miniText{
+    
+    font-size: 2vh;
+    flex-basis: 25vh;
+	align-self: center;
+	text-align: center;
+	font-family: "Bebas Kai";	
+	color: white;
+}
+
 
 #txt {
 	position: relative;
@@ -240,9 +389,6 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 
-
-/* Overskrifter */
-
 .Overskrift{
 	font-family: "Times New Roman";
 	font-size: 3em;
@@ -259,44 +405,14 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 .Overskrift1{
-	font-family: Impact;
+	font-family: "Times New Roman";
 	font-size: 3em;
 	-ms-flex-line-pack: center;
 	align-content: center;
 	float:center;
 	text-align: center;
 	position: absolute;
-	margin-top: 30%;
-	left: 50%;
-	margin-right: -50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%)
-}
-
-.Overskrift2{
-	font-family: Impact;
-	font-size: 3em;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	float:center;
-	text-align: center;
-	position: absolute;
-	margin-top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%)
-}
-
-.Overskrift3{
-	font-family: Impact;
-	font-size: 3em;
-	-ms-flex-line-pack: center;
-	align-content: center;
-	float:center;
-	text-align: center;
-	position: absolute;
-	margin-top: 70%;
+	margin-top: 25%;
 	left: 50%;
 	margin-right: -50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -306,11 +422,11 @@ Her slutter fyll-elementer------------------------------------------------------
 .content {
 	width: 60%;
 	position: absolute;
-	margin-top: 10%;
+	margin-top: 15%;
 	left: 50%;
 	margin-right: -50%;
 	font-family: Times;
-	font-size: 1em;
+	font-size: 1.5em;
 	-ms-flex-line-pack: center;
 	align-content: center;
 	float: center;
@@ -323,11 +439,12 @@ Her slutter fyll-elementer------------------------------------------------------
 .content1 {
 	width: 60%;
 	position: absolute;
-	margin-top: 30%;
+	margin-top: 40%;
 	left: 50%;
 	margin-right: -50%;
+    margin-bottom: 10%;
 	font-family: Times;
-	font-size: 1em;
+	font-size: 1.5em;
 	-ms-flex-line-pack: center;
 	align-content: center;
 	float: center;
@@ -337,7 +454,49 @@ Her slutter fyll-elementer------------------------------------------------------
 	transform: translate(-50%, 25%)
 
 }
+#restrainKnapp{
+    display: flex;
+    justify-content: center;
+}
 
+#leiKnapp{
+    border-radius: 10px;
+    background-color: lime;
+    text-align: center;
+    width: 5%;
+    
+}
+#leiKnapp a{
+    color: black;
+    text-decoration: none;
+}
+#leiKnapp:hover{
+    background-color: darkgreen;
+}
+
+.stjerner > span:hover:before {
+   content: "\2605";
+   position: absolute;
+    color: yellow;
+}
+
+.stjerner {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+    font-size: 2em;
+    text-align: center;
+}
+.stjerner > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.stjerner > span:hover:before,
+.stjerner > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+    color: yellow;
+}
 /*Filmer*/
 .film-container {
 	padding: 0;
@@ -407,9 +566,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-family: "Bebas Kai";	
 	color: white;
 }
-.movieText a{
-	text-decoration: none;
-}
+
 .moviePicture{
 	align-self: flex-start;
 	height: 30vh;
@@ -419,7 +576,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-style: "Bebas Kai";
 	font-size: 10vh;
 }
-a span {
+.movieText a  {
 	font-family: Impact;
 	text-decoration: none;
 	color: #997A92;

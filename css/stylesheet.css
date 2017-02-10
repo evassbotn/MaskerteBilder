@@ -425,3 +425,21 @@ a span {
 	color: #997A92;
 	font-size: 3vh;
 }
+.indexContent{
+	display: flex;
+	height: 60vh;
+	width: 80vw;
+	flex-direction: column;
+	align-content: center; 
+	justify-content: space-around;
+}
+.indexPicture{
+	align-self: center;
+	width: 15vw;
+	height: auto;
+}
+.indexText{
+	align-self: center;
+	font-family: "Bebas Kai";
+	font-size: 6vh;
+}

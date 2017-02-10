@@ -222,8 +222,62 @@ body, html {
 	justify-content: space-around;
 }
 
-#mobildrop li {
+@media (max-width: 650px) {
+	/*mediaqueries som håndterer header på mobile enheter*/
+	.header {
+		font-size: 3.2vw;
 
+		height: auto;
+		min-height: 0;
+	}
+
+	.søkefelt {
+		margin: 0;
+
+		flex-grow: 1;
+	}
+
+	.søkefelt input[type=text] {
+		margin: 0;
+		width: 100%;
+
+		flex-grow: 1;
+	}
+
+	.søkefelt input[type=text]:focus {
+		width: 100%;
+	}
+
+	.mainbar, .mainbar *, #kaphe {
+		display: none;
+	}
+
+	.mobilMeny * {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#mobildrop {
+		list-style-type: none;
+	}
+
+	.mobilMeny, #menyIkon, #menyIkon img {	
+		margin: 1px;
+
+		display: flex;
+	}
+
+	#mobildrop {
+		display: none;
+	}
+
+	.logo {
+		font-size: 5vw;
+	}
+
+	#teat {
+		height: 30vw;
+	}
 }
 /*
 Her slutter header-elementer---------------------------------------------------------

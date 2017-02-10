@@ -21,48 +21,42 @@
 	<div class="container">
 		<div class="fyll">
 			<div class="header">
-				<div class="mainbar">
+				<div id="upperHead">
+					<div class="mainbar">
+						<ul>
+							<li> <a href="index.html"> Hjemme </a></li>
+							<li> <a href="filmer.html"> Filmer </a></li>
+							<li> <a href="#"> Forum </a></li>
+
+						</ul>
+					</div><!--.mainbar-->
+
+					<div class="søkefelt"> <!--Flyttet hit for androidtest-->
+						<form><input type="text" name="søk" placeholder="Søk..."></form>
+					</div><!--.søkefelt-->
+
+					<div class="menyKnapp">
+						<ul>
+							<li class="meny" id="kaphe"> <a href="#"> Kaphekoff </a> 
+								<div class="dropned">
+									<a href="#"> Mine lån </a>
+									<a href="#"> Min ønskeliste </a>
+									<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
+								</div>
+							</li>
+						</ul>
+					</div><!--.menyKnapp-->
+					<div class="mobilMeny">
+						<a href="#" id="menyIkon" onclick="sprettMeny();return false"><img src="pics/menu-512.png"></a>
+					</div><!--.mobilMeny-->
+				</div><!--#upperHead-->
+				<div id="mobildrop">
 					<ul>
 						<li> <a href="index.html"> Hjemme </a></li>
 						<li> <a href="filmer.html"> Filmer </a></li>
 						<li> <a href="#"> Forum </a></li>
-						
 					</ul>
-				</div><!--.mainbar-->
-
-				<div class="søkefelt"> <!--Flyttet hit for androidtest-->
-					<form><input type="text" name="søk" placeholder="Søk..."></form>
-				</div><!--.søkefelt-->
-
-				<div class="menyKnapp">
-					<ul>
-						<li class="meny" id="kaphe"> <a href="#"> Kaphekoff </a> 
-							<div class="dropned">
-								<a href="#"> Mine lån </a>
-								<a href="#"> Min ønskeliste </a>
-								<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
-							</div>
-						</li>
-					</ul>
-				</div><!--.menyKnapp-->
-				<div class="mobilMeny">
-					<a href="#" id="menyIkon" onclick="sprettMeny();return false"><img src="pics/menu-512.png"></a>
-					<div id="mobildrop"></div>
-					<!--
-					<ul>
-						<li> <a href="index.html"> Hjemme </a></li>
-						<li> <a href="filmer.html"> Filmer </a></li>
-						<li> <a href="#"> Forum </a></li>
-						<li class="meny"> <a href="#"> Kaphekoff </a> 
-							<div class="dropned">
-								<a href="#"> Mine lån </a>
-								<a href="#"> Min ønskeliste </a>
-								<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
-							</div>
-						</li>
-					</ul>
-					-->
-				</div><!--.mobilMeny-->
+				</div>
 			</div><!--.header-->
 			<div class="logo">
 				<img id="teat" src="pics/teat.svg">

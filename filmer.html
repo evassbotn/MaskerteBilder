@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Vi har benyttet title og icon for å sette inn tittel og fanebildet -->
-	<title> Filmer </title>
+	<title>Filmer</title>
 	<link rel="icon" href="pics/teat.png">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<style type="text/css">
-		.fyll { /*Bakgrunnsbilde varierer fra side til side, og legges derfor inn direkte i html-doc*/
-			background-image: ?;
+		.fyll {
+			background-image:url("pics/stella.jpg");  
 		}
 	</style>
 	<script type="text/javascript" src="scripts/buttons.js"></script>
@@ -15,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1">
 </head>
 <body>
-	<div class="container">
+	<div class="container"> 
 		<div class="fyll">
 			<div class="header">
 				<div id="upperHead">
@@ -55,16 +54,41 @@
 					</ul>
 				</div>
 			</div><!--.header-->
-			
+				<div class="movieContent">
+					<article class="movieText">
+						
+						<h1><a href="MI.html">Mission:Impossible (1996)</a> </h1> 
+                        <p>
+					 	I denne heseblesende action-thrilleren følger vi superstjernen Tom Cruise som superagenten Ethan Hunt og hans jakt på å frifinne seg selv fra feilaktige anklager om drapene på sitt eget team.
+						</p>
+					</article>
+					<img class="moviePicture" src="pics/mi_3.png" alt="Mission Impossible">
+				</div>	<!--movieContent-->	
+				<div class="movieContent">
+					<img class="moviePicture" src="pics/lb2.jpg" alt="Lunchbox">
+					<article class="movieText">
+						
+						<h1><a href="Lunchbox.html">The Lunchbox (2013)</a></h1>
+                        <p>
+						Indiske The Lunchbox er en sjelden filmperle som har begeistret et stort internasjonalt publikum med sin originalitet og varme. Filmen vant den prestisjetunge prisen Critics Week Viewers Choice Award under Cannes-festivalen i 2013.
+						</p>
+					</article>
+				</div>	<!--movieContent-->
+				<div class="movieContent">
+					<article class="movieText">
+						
+						<h1><a href="theint.html"> The Intouchables (2011) </a></h1> 
+                        <p>
+						Den sanne historien om to menn som aldri skulle ha møtt hverandre - De Urørlige er en oppløftende komedie om vennskap, tillit og menneskelige muligheter.
+						</p>
+					</article>
+					<img class="moviePicture" src="pics/theint2.jpg" alt="
+Intouchables">
+				</div><!--movieContent-->
 		</div><!--.fyll-->
-
-		<div class="beneath">
-			<div class="film-container">
-				<a href="MI.html">       <img class="film-item"  src="pics/mi_3.png">   </a>
-				<a href="Lunchbox.html"> <img class="film-item1" src="pics/lb2.jpg">    </a>
-				<a href="theint.html">   <img class="film-item2" src="pics/theint2.jpg"></a>
-			</div>
-		</div><!--.beneath-->
+			<div class="beneath">
+			
+			</div>						
 	</div><!--.container-->
 </body>
 </html>

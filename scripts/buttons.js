@@ -6,3 +6,12 @@ function loggUtInn() {
 		link.innerHTML = "Logg ut";
 	}
 }
+
+function sprettMeny() {
+	var mobildrop = document.getElementById("mobildrop");
+	if(mobildrop.style.display !== "flex") {
+		mobildrop.style.display = "flex";
+	} else if(mobildrop.style.display !== "none") {
+		mobildrop.style.display = "none";
+	}
+}

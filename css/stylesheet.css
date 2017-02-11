@@ -14,9 +14,7 @@ body, html {
 	margin: 0 auto;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -35,9 +33,7 @@ body, html {
 	width: 100%;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 auto;
@@ -56,24 +52,32 @@ body, html {
 
 
 .header { /*Pakker inn alle elementene i header*/
-	background-color: black;
-	box-shadow: 0px 8px 16px 0px black;
-	opacity: 0.65;
+	background: rgba(0, 0, 0, 0.65);
+	box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.8);
 
 	font-size: 20px;
 	font-weight: 600;
 	font-family: "Bebas Kai";
+	font-variant-caps: small-caps;
 
 	min-height: 60px;
 	height: 60px;
 	width: 100%;
 	max-width: 1600px;
 	border-radius: 0 0 10px 10px;
-
+	
 	display: -webkit-box;
-
 	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
 
+#upperHead {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
@@ -93,13 +97,15 @@ body, html {
 	color: white;
 }
 
-.mainbar ul, .søkefelt form, .menyKnapp ul, .dropned {
+.header ul {
 	list-style-type: none;
+}
+
+.mainbar ul, .menyKnapp ul, .dropned {
+	opacity: 0.8;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 }
 
@@ -107,31 +113,24 @@ body, html {
 	width: 100%;
 
 	-webkit-box-pack: justify;
-
 	-ms-flex-pack: justify;
-
 	justify-content: space-between;
 }
 
 .mainbar li:hover {
-	font-size: 25px;
-	-webkit-transition-duration: 0.1s;
-	transition-duration: 0.1s;
-}
-
-.secondbar {
-	flex-direction: row;
+	font-size: 22px;
+	-webkit-transition-duration: 0.05s;
+	transition-duration: 0.05s;
 }
 
 .søkefelt {
+	opacity: 0.65;
+
 	margin-left: 6rem;
+
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
-}
-
-.søkefelt2 {
-	display: none;
 }
 
 .søkefelt input[type=text] { /* CSS for å tilpasse søkefeltet når det strekker seg */
@@ -181,10 +180,107 @@ body, html {
 	border-radius: 10px;
 }
 
-.meny:hover .dropned {
+#kaphe:hover .dropned {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+}
+
+.mobilMeny, #mobildrop {
+	color: white;
+
+	display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#menyIkon img {
+	width: 40px;
+	height: 40px;
+}
+
+#mobildrop {
+	font-size: 24px;
+	font-weight: 600;
+
+	margin: 0;
+}
+
+#mobildrop * {
+	margin: 10px 0;
+	margin-left: -4px;
+}
+
+@media (max-width: 650px) {
+	/*mediaqueries som håndterer header på mobile enheter*/
+	.header {
+		font-size: 3.2vw;
+
+		height: auto;
+		min-height: 0;
+	}
+
+	.søkefelt {
+		margin: 0;
+
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+
+	.søkefelt input[type=text] {
+		margin: 0;
+		width: 100%;
+
+		-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+        flex-grow: 1;
+	}
+
+	.søkefelt input[type=text]:focus {
+		width: 100%;
+	}
+
+	.mainbar, .mainbar *, #kaphe {
+		display: none;
+	}
+
+	.mobilMeny * {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+        flex-direction: column;
+	}
+
+	#mobildrop {
+		list-style-type: none;
+	}
+
+	.mobilMeny, #menyIkon, #menyIkon img {	
+		margin: 1px;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	#mobildrop {
+		display: none;
+	}
+
+	.logo {
+		font-size: 5vw;
+	}
+
+	#teat {
+		height: 30vw;
+	}
 }
 /*
 Her slutter header-elementer---------------------------------------------------------
@@ -199,9 +295,7 @@ Her slutter header-elementer----------------------------------------------------
 	height: 100%;
 	
 	display: -webkit-box;
-	
-	display: -ms-flexbox;
-	
+	display: -ms-flexbox;	
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -219,17 +313,13 @@ Her slutter header-elementer----------------------------------------------------
 Her slutter fyll-elementer---------------------------------------------------------
 */
 
-#allcontent{
+#allContent {
 
 }
 
-
 #filmList{
-        position: absolute;
-	left: 50%;
-	margin-right: -50%;
+    position: absolute;
     -webkit-transform: translate(-50%, 50%);
-	
 	transform: translate(-50%, 50%);
     margin-top: -5%;
     background-color: black;
@@ -385,7 +475,6 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-size: 2em;
 	font-family: impact;
 	color: black;
-	
 }
 
 
@@ -549,26 +638,40 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-align: center;
 }
 .movieContent{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100vh;
 	width: 70vw;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	background-color: rgba(0,0,0,0.5);
-	align-items: baseline;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
 	padding: 0 4px;
 }
 .movieText {
-	flex-basis: 60vh;
-	align-self: center;
+	-ms-flex-preferred-size: 60vh;
+	    flex-basis: 60vh;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	text-align: center;
 	font-family: "Bebas Kai";	
 	color: white;
 }
 
 .moviePicture{
-	align-self: flex-start;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
 	height: 30vh;
 
 }
@@ -583,20 +686,31 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-size: 3vh;
 }
 .indexContent{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 60vh;
 	width: 80vw;
-	flex-direction: column;
-	align-content: center; 
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-line-pack: center;
+	    align-content: center; 
+	-ms-flex-pack: distribute; 
+	    justify-content: space-around;
 }
 .indexPicture{
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	width: 15vw;
 	height: auto;
 }
 .indexText{
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	font-family: "Bebas Kai";
 	font-size: 6vh;
 }

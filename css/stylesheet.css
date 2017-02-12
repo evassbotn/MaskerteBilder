@@ -127,7 +127,7 @@ body, html {/*skj006*/
 	transition-duration: 0.05s;
 }
 
-.søkefelt {
+.søkefelt {/*eva028*/
 	opacity: 0.65;
 
 	margin-left: 6rem;
@@ -317,7 +317,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	color: white;
 }
 
-.dropOpp {/*Pro012*/
+.dropOpp {/*Pro012*//*eva028*/
 	background: rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1);
 	position: absolute;
@@ -331,7 +331,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	flex-direction: column;
 }
 
-.dropOpp a {/*Pro012*/
+.dropOpp a {/*Pro012*//*eva028*/
 	padding: 15px 15px;
 	text-decoration: none;
 	display: block;
@@ -339,7 +339,7 @@ Her slutter fyll-elementer------------------------------------------------------
     
 }
 
-.meny:hover .dropOpp {/*Pro012*/
+.meny:hover .dropOpp {/*Pro012*//*eva028*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -438,7 +438,7 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 
-#txt {
+#txt {/*eva028*/
 	position: relative;
 	color: #FFFFFF;
 	top: 20%;
@@ -521,7 +521,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	transform: translate(-50%, 25%)
 
 }
-#restrainKnapp{/*Pro012*/
+#restrainKnapp{/*Pro012*//*eva028*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,46 +530,46 @@ Her slutter fyll-elementer------------------------------------------------------
             justify-content: center;
 }
 
-#leiKnapp{/*Pro012*/
+#leiKnapp{/*Pro012*//*eva028*/
     border-radius: 10px;
     background-color: lime;
     text-align: center;
     width: 5%;
     
 }
-#leiKnapp a{/*Pro012*/
+#leiKnapp a{/*Pro012*//*eva028*/
     color: black;
     text-decoration: none;
 }
-#leiKnapp:hover{/*Pro012*/
+#leiKnapp:hover{/*Pro012*//*eva028*/
     background-color: darkgreen;
 }
 
-.stjerner > span:hover:before {/*Pro012*/
+.stjerner > span:hover:before {/*Pro012*//*eva028*/
    content: "\2605";
    position: absolute;
     color: yellow;
 }
 
-.stjerner {/*Pro012*/
+.stjerner {/*Pro012*//*eva028*/
   unicode-bidi: bidi-override;
   direction: rtl;
     font-size: 2em;
     text-align: center;
 }
-.stjerner > span {/*Pro012*/
+.stjerner > span {/*Pro012*//*eva028*/
   display: inline-block;
   position: relative;
   width: 1.1em;
 }
 .stjerner > span:hover:before,
-.stjerner > span:hover ~ span:before {/*Pro012*/
+.stjerner > span:hover ~ span:before {/*Pro012*//*eva028*/
    content: "\2605";
    position: absolute;
     color: yellow;
 }
 /*Filmer*/
-.film-container {
+.film-container {/*eva028*/
 	padding: 0;
 	margin: 0;
 	
@@ -580,7 +580,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-flex-flow: row wrap;
 }
 
-.film-item {
+.film-item {/*eva028*/
 
 	padding: 5px;
 	width: 55%;
@@ -594,7 +594,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-align: center;
 }
 
-.film-item1 {
+.film-item1 {/*eva028*/
 
 	padding: 5px;
 	width: 55%;
@@ -607,7 +607,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-align: center;
 }
 
-.film-item2 {
+.film-item2 {/*eva028*/
 
 	padding: 5px;
 	width: 55%;
@@ -700,14 +700,14 @@ Her slutter fyll-elementer------------------------------------------------------
 	-ms-flex-pack: distribute; 
 	    justify-content: space-around;
 }
-.indexPicture{ 
+.indexPicture{ /*eva028*/
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
 	width: 15vw;
 	height: auto;
 }
-.indexText{ 
+.indexText{ /*eva028*/
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;

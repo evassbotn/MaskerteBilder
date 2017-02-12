@@ -52,6 +52,7 @@ body, html {
 
 #film-fyll { /*Unik for filmer-siden, siden fyll-div der må være lengre*/
 	height: auto;
+	min-height: 100%;
 }
 
 .header { /*Pakker inn alle elementene i header*/
@@ -189,7 +190,7 @@ body, html {
 	display: flex;
 }
 
-.mobilMeny, #mobildrop {
+#mobildrop {
 	color: white;
 
 	display: none;
@@ -209,6 +210,8 @@ body, html {
 #menyIkon {
 	position: relative;
 	right: 5px;
+
+	display: none;
 }
 
 #mobildrop {
@@ -311,12 +314,11 @@ Her slutter fyll-elementer------------------------------------------------------
 .meny a{
 	text-decoration: none;
 	color: white;
-
 }
 
 .dropOpp {
-	background-color: black;
-	box-shadow: 0px 8px 16px 0px black;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1);
 	position: absolute;
     margin-left: -2%;
 	text-align: center;
@@ -326,7 +328,6 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	position: absolute;
 }
 
 .dropOpp a {
@@ -340,7 +341,7 @@ Her slutter fyll-elementer------------------------------------------------------
 .meny:hover .dropOpp {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: block;
+	display: flex;
     bottom: 100%;
 }
 
@@ -380,6 +381,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	color: white;
 }
 #rutineContent{
+	background-color: rgba(0,0,0,0.5);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -394,7 +396,6 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	background-color: rgba(0,0,0,0.5);
 	-webkit-box-align: baseline;
 	    -ms-flex-align: baseline;
 	        align-items: baseline;
@@ -404,8 +405,8 @@ Her slutter fyll-elementer------------------------------------------------------
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 10vh;
-	width: 20vw;
+	height: auto;
+	width: auto;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-webkit-box-orient: horizontal;
@@ -415,11 +416,10 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	background-color: rgba(0,0,0,0.5);
 	-webkit-box-align: baseline;
 	    -ms-flex-align: baseline;
 	        align-items: baseline;
-	padding: 0 4px;
+	padding: 10px;
 }
 
 
@@ -428,10 +428,6 @@ Her slutter fyll-elementer------------------------------------------------------
     max-width: 12vh;
 }
 .miniText{
-    
-    font-size: 2vh;
-    -ms-flex-preferred-size: 25vh;
-        flex-basis: 25vh;
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
@@ -445,7 +441,6 @@ Her slutter fyll-elementer------------------------------------------------------
 	position: relative;
 	color: #FFFFFF;
 	top: 20%;
-
 }
 
 /* Posisjonerer spesifikk tekst på bildet */
@@ -627,6 +622,8 @@ Her slutter fyll-elementer------------------------------------------------------
 .filmvisning {
 	background-color: rgba(0,0,0,0.5);
 
+	padding: 10px 0;
+	height: 100%;
 	width: 70%;
 	max-width: 1400px;
 
@@ -672,7 +669,7 @@ Her slutter fyll-elementer------------------------------------------------------
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-	width: 30vw;
+	max-width: 20vw;
 	-webkit-box-flex: 0.5;
 	    -ms-flex: 0.5 0.5;
 	        flex: 0.5 0.5;

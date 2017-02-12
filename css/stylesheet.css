@@ -206,6 +206,11 @@ body, html {
 	height: 40px;
 }
 
+#menyIkon {
+	position: relative;
+	right: 5px;
+}
+
 #mobildrop {
 	font-size: 24px;
 	font-weight: 600;

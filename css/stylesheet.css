@@ -1,3 +1,106 @@
+@media (max-width: 1000px) {
+	/*Håndterer filmer.html når mindre enn 1000px bredt*/
+	.movieContent {
+		flex-direction: column;
+	}
+
+	.moviePicture {
+		min-width: 80%;
+		order: 2;
+	}
+
+	.movieText {
+		min-width: 80%
+	}
+
+	.movieText a {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	/*Håndterer filmer.html når mindre enn iPad*/
+	.filmvisning {
+		min-width: 100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	/*Fjerner bar på bunnen av index når skjerm blir for liten*/
+	#allContent {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	/*mediaqueries som håndterer header på mobile enheter*/
+	.header {
+		font-size: 3.2vw;
+
+		height: auto;
+		min-height: 0;
+	}
+
+	.søkefelt {
+		margin: 0;
+
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+
+	.søkefelt input[type=text] {
+		margin: 0;
+		width: 100%;
+
+		-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+        flex-grow: 1;
+	}
+
+	.søkefelt input[type=text]:focus {
+		width: 100%;
+	}
+
+	.mainbar, .mainbar *, #kaphe {
+		display: none;
+	}
+
+	.mobilMeny * {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+        flex-direction: column;
+	}
+
+	#mobildrop {
+		list-style-type: none;
+	}
+
+	.mobilMeny, #menyIkon, #menyIkon img {	
+		margin: 1px;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	#mobildrop {
+		display: none;
+	}
+
+	.logo {
+		font-size: 5vw;
+	}
+
+	#teat {
+		height: 30vw;
+	}
+}
+
 body, html {
 	background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
 	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);
@@ -49,6 +152,9 @@ body, html {
 	align-items: center;
 }
 
+#film-fyll { /*Unik for filmer-siden, siden fyll-div der må være lengre*/
+	height: auto;
+}
 
 .header { /*Pakker inn alle elementene i header*/
 	background: rgba(0, 0, 0, 0.7);
@@ -212,75 +318,6 @@ body, html {
 	margin: 10px 0;
 	margin-left: -4px;
 }
-
-@media (max-width: 650px) {
-	/*mediaqueries som håndterer header på mobile enheter*/
-	.header {
-		font-size: 3.2vw;
-
-		height: auto;
-		min-height: 0;
-	}
-
-	.søkefelt {
-		margin: 0;
-
-		-webkit-box-flex: 1;
-		-ms-flex-positive: 1;
-		flex-grow: 1;
-	}
-
-	.søkefelt input[type=text] {
-		margin: 0;
-		width: 100%;
-
-		-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-        flex-grow: 1;
-	}
-
-	.søkefelt input[type=text]:focus {
-		width: 100%;
-	}
-
-	.mainbar, .mainbar *, #kaphe {
-		display: none;
-	}
-
-	.mobilMeny * {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-        flex-direction: column;
-	}
-
-	#mobildrop {
-		list-style-type: none;
-	}
-
-	.mobilMeny, #menyIkon, #menyIkon img {	
-		margin: 1px;
-
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
-
-	#mobildrop {
-		display: none;
-	}
-
-	.logo {
-		font-size: 5vw;
-	}
-
-	#teat {
-		height: 30vw;
-	}
-}
 /*
 Her slutter header-elementer---------------------------------------------------------
 */
@@ -366,13 +403,6 @@ Her slutter fyll-elementer------------------------------------------------------
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
-
-@media (max-width: 1100px) {
-	#allContent {
-		display: none;
-	}
-}
-
 
 .meny a{
 	text-decoration: none;
@@ -662,30 +692,37 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-size: 3em;
 	text-align: center;
 }
+
+.filmvisning {
+	background-color: rgba(0,0,0,0.5);
+
+	width: 70%;
+
+	display: flex;
+	flex-direction: column;
+}
+
 .movieContent{
+	background: rgba(1, 1, 1, 0.5);
+	border-radius: 10px 10px 10px 10px;
+
+    padding: 12px;
+	margin: 0px 10px;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 100vh;
-	width: 70vw;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	background-color: rgba(0,0,0,0.5);
-	-webkit-box-align: baseline;
-	    -ms-flex-align: baseline;
-	        align-items: baseline;
-	padding: 0 4px;
 }
 .movieText {
-	-ms-flex-preferred-size: 60vh;
-	    flex-basis: 60vh;
+	font-size: 1rem;
+
+	width: 30vw;
+
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
@@ -695,9 +732,8 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 .moviePicture{
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
-	height: 30vh;
+    align-self: center;
+	width: 30vw;
 
 }
 #oneHead {
@@ -708,7 +744,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-family: Impact;
 	text-decoration: none;
 	color: #997A92;
-	font-size: 3vh;
+	font-size: 1.5rem;
 }
 .indexContent{
 	display: -webkit-box;

@@ -669,10 +669,9 @@ Her slutter fyll-elementer------------------------------------------------------
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-	max-width: 20vw;
-	-webkit-box-flex: 0.5;
-	    -ms-flex: 0.5 0.5;
-	        flex: 0.5 0.5;
+	max-height: 80vh;
+	max-width: 15vw;
+	flex: 1 1;
 
 }
 #oneHead {

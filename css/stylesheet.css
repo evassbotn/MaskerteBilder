@@ -1,4 +1,4 @@
-body, html {
+body, html {/*skj006*/
 	background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
 	background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#cccccc);
 	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);
@@ -8,7 +8,7 @@ body, html {
 	min-height: 100%;
 }
 
-.container { /*Pakker inn alt innenfor body */
+.container { /*Pakker inn alt innenfor body *//*skj006*/
 	height: 100%;
 	max-width: 100%;
 	margin: 0 auto;
@@ -23,7 +23,7 @@ body, html {
 }
 
 
-.fyll { /*Pakker inn alt som skal vises før man blar nedover på siden*/
+.fyll { /*Pakker inn alt som skal vises før man blar nedover på siden*//*skj006*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -50,12 +50,12 @@ body, html {
 	align-items: center;
 }
 
-#film-fyll { /*Unik for filmer-siden, siden fyll-div der må være lengre*/
+#film-fyll { /*Unik for filmer-siden, siden fyll-div der må være lengre*//*skj006*/
 	height: auto;
 	min-height: 100%;
 }
 
-.header { /*Pakker inn alle elementene i header*/
+.header { /*Pakker inn alle elementene i header*//*skj006*/
 	background: rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.7);
 
@@ -79,7 +79,7 @@ body, html {
 	        flex-direction: column;
 }
 
-#upperHead {
+#upperHead {/*skj006*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -190,7 +190,7 @@ body, html {
 	display: flex;
 }
 
-#mobildrop {
+#mobildrop {/*skj006*/
 	color: white;
 
 	display: none;
@@ -202,26 +202,26 @@ body, html {
 	    justify-content: space-around;
 }
 
-#menyIkon img {
+#menyIkon img {/*skj006*/
 	width: 40px;
 	height: 40px;
 }
 
-#menyIkon {
+#menyIkon {/*skj006*/
 	position: relative;
 	right: 5px;
 
 	display: none;
 }
 
-#mobildrop {
+#mobildrop {/*skj006*/
 	font-size: 24px;
 	font-weight: 600;
 
 	margin: 0;
 }
 
-#mobildrop * {
+#mobildrop * {/*skj006*/
 	margin: 10px 0;
 	margin-left: -4px;
 }
@@ -230,7 +230,7 @@ Her slutter header-elementer----------------------------------------------------
 */
 
 
-.logo { /*Pakker inn MaskedPictures-logo og tekst*/
+.logo { /*Pakker inn MaskedPictures-logo og tekst*//*skj006*/
 	font-size: 2rem;
 	font-family: impact;
 	text-align: center;
@@ -256,7 +256,8 @@ Her slutter header-elementer----------------------------------------------------
 Her slutter fyll-elementer---------------------------------------------------------
 */
 
-#allContent {/*
+#allContent {/*skj006*/
+	/*
     background-color: rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
 	font-size: 20px;
@@ -291,7 +292,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-size: 20px;
 	font-weight: 600;
 	font-family: "Bebas Kai";
-	list-style-type: none;
+	list-style-type: none;/*skj006*/
 	min-height: 60px;
 	width: 100%;
 	max-width: 1600px;
@@ -405,8 +406,8 @@ Her slutter fyll-elementer------------------------------------------------------
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: auto;
-	width: auto;
+	height: auto;/*skj006*/
+	width: auto;/*skj006*/
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-webkit-box-orient: horizontal;
@@ -619,7 +620,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-align: center;
 }
 
-.filmvisning {
+.filmvisning {/*skj006*/
 	background-color: rgba(0,0,0,0.5);
 
 	padding: 10px 0;
@@ -642,7 +643,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	background: rgba(1, 1, 1, 0.5);
 	border-radius: 10px 10px 10px 10px;
 
-    padding: 12px;
+    padding: 12px;/*skj006*/
 	margin: 0px 10px;
 
 	display: -webkit-box;
@@ -654,7 +655,7 @@ Her slutter fyll-elementer------------------------------------------------------
 .movieText {
 	font-size: 1rem;
 
-	width: 30vw;
+	width: 30vw;/*skj006*/
 	max-width: 400px;
 
 	-ms-flex-item-align: center;
@@ -669,8 +670,8 @@ Her slutter fyll-elementer------------------------------------------------------
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-	max-height: 80vh;
-	max-width: 15vw;
+	max-height: 80vh;/*skj006*/
+	max-width: 15vw;/*skj006*/
 	flex: 1 1;
 
 }
@@ -714,55 +715,55 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-size: 6vh;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {/*skj006*/
 	/*Håndterer filmer.html når mindre enn 1000px bredt*/
-	.movieContent {
+	.movieContent {/*skj006*/
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 	}
 
-	.moviePicture {
+	.moviePicture {/*skj006*/
 		min-width: 80%;
 		-webkit-box-ordinal-group: 3;
 		    -ms-flex-order: 2;
 		        order: 2;
 	}
 
-	.movieText {
+	.movieText {/*skj006*/
 		min-width: 80%
 	}
 
-	.movieText a {
+	.movieText a {/*skj006*/
 		font-size: 1.5rem;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {/*skj006*/
 	/*Håndterer filmer.html når mindre enn iPad*/
-	.filmvisning {
+	.filmvisning {/*skj006*/
 		min-width: 100%;
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) {/*skj006*/
 	/*Fjerner bar på bunnen av index når skjerm blir for liten*/
-	#allContent {
+	#allContent {/*skj006*/
 		display: none;
 	}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px) {/*skj006*/
 	/*mediaqueries som håndterer header på mobile enheter*/
-	.header {
+	.header {/*skj006*/
 		font-size: 3.2vw;
 
 		height: auto;
 		min-height: 0;
 	}
 
-	.søkefelt {
+	.søkefelt {/*skj006*/
 		margin: 0;
 
 		-webkit-box-flex: 1;
@@ -770,7 +771,7 @@ Her slutter fyll-elementer------------------------------------------------------
 		flex-grow: 1;
 	}
 
-	.søkefelt input[type=text] {
+	.søkefelt input[type=text] {/*skj006*/
 		margin: 0;
 		width: 100%;
 
@@ -779,15 +780,15 @@ Her slutter fyll-elementer------------------------------------------------------
         flex-grow: 1;
 	}
 
-	.søkefelt input[type=text]:focus {
+	.søkefelt input[type=text]:focus {/*skj006*/
 		width: 100%;
 	}
 
-	.mainbar, .mainbar *, #kaphe {
+	.mainbar, .mainbar *, #kaphe {/*skj006*/
 		display: none;
 	}
 
-	.mobilMeny * {
+	.mobilMeny * {/*skj006*/
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -797,11 +798,11 @@ Her slutter fyll-elementer------------------------------------------------------
         flex-direction: column;
 	}
 
-	#mobildrop {
+	#mobildrop {/*skj006*/
 		list-style-type: none;
 	}
 
-	.mobilMeny, #menyIkon, #menyIkon img {	
+	.mobilMeny, #menyIkon, #menyIkon img {/*skj006*/
 		margin: 1px;
 
 		display: -webkit-box;
@@ -809,15 +810,15 @@ Her slutter fyll-elementer------------------------------------------------------
 		display: flex;
 	}
 
-	#mobildrop {
+	#mobildrop {/*skj006*/
 		display: none;
 	}
 
-	.logo {
+	.logo {/*skj006*/
 		font-size: 5vw;
 	}
 
-	#teat {
+	#teat {/*skj006*/
 		height: 30vw;
 	}
 }

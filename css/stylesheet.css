@@ -1,7 +1,6 @@
 body, html {
-	/*background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
-	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);*/
-	background: url('pics/blaa.jpg');
+	background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
+	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -52,8 +51,8 @@ body, html {
 
 
 .header { /*Pakker inn alle elementene i header*/
-	background: rgba(0, 0, 0, 0.65);
-	box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.7);
 
 	font-size: 20px;
 	font-weight: 600;
@@ -313,8 +312,29 @@ Her slutter header-elementer----------------------------------------------------
 Her slutter fyll-elementer---------------------------------------------------------
 */
 
-#allContent {
-
+#allContent {/*
+    background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Bebas Kai";
+	min-height: 60px;
+	width: 100%;
+	max-width: 1600px;
+	border-radius: 10px 10px 0 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;*/
 }
 
 #filmList{
@@ -322,16 +342,16 @@ Her slutter fyll-elementer------------------------------------------------------
     -webkit-transform: translate(-50%, 50%);
 	transform: translate(-50%, 50%);
     margin-top: -5%;
-    background-color: black;
-	box-shadow: 0px 0px 10px 10px black;
-	opacity: 0.65;
+    background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
 	font-size: 20px;
 	font-weight: 600;
 	font-family: "Bebas Kai";
+	list-style-type: none;
 	min-height: 60px;
 	width: 100%;
 	max-width: 1600px;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 0 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -345,12 +365,16 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-    
+}
+
+@media (max-width: 1100px) {
+	#allContent {
+		display: none;
+	}
 }
 
 
 .meny a{
-    list-style-type: none;
 	text-decoration: none;
 	color: white;
 
@@ -368,6 +392,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	position: absolute;
 }
 
 .dropOpp a {
@@ -381,7 +406,7 @@ Her slutter fyll-elementer------------------------------------------------------
 .meny:hover .dropOpp {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	display: block;
     bottom: 100%;
 }
 

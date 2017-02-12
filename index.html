@@ -3,7 +3,7 @@
 <head>
 	<!-- Vi har benyttet title og icon for å sette inn tittel og fanebildet -->
 	<title> MaskedPictures </title>
-	<link rel="icon" href="pics/teat.png">
+	<link rel="icon" href="pics/teat.png"><!--pro012-->
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<style type="text/css">
 		.fyll { /*Bakgrunnsbilde varierer fra side til side, og legges derfor inn direkte i html-doc*/
@@ -21,7 +21,8 @@
 		<div class="fyll">
 			<div class="header">
 				<div id="upperHead">
-					<div class="mainbar">
+					<div class="mainbar"><!--pro012-->
+                   
 						<ul>
 							<li> <a href="index.html"> Hjemme </a></li>
 							<li> <a href="filmer.html"> Filmer </a></li>
@@ -34,13 +35,13 @@
 						<form><input type="text" name="søk" placeholder="Søk..."></form>
 					</div><!--.søkefelt-->
 
-					<div class="menyKnapp">
+					<div class="menyKnapp"><!--pro012-->
 						<ul>
 							<li class="meny" id="kaphe"> <a href="#"> Kaphekoff </a> 
 								<div class="dropned">
 									<a href="#"> Mine lån </a>
 									<a href="#"> Min ønskeliste </a>
-									<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a>
+									<a href="#" title="Trykk her for å logge inn/ut" id="loggUtInn" onclick="loggUtInn();return false">Logg ut</a><!--skj006-->
 								</div>
 							</li>
 						</ul>
@@ -57,12 +58,15 @@
 					</ul>
 				</div>
 			</div><!--.header-->
-			<div class="logo">
+			<div class="logo"><!--pro012-->
 				<img id="teat" src="pics/teat.svg" alt="Logo">
 				<p> MaskedPictures </p>
 			</div>
+            
+            
 
-			<div id="allContent">
+			<div id="allContent"><!--pro012-->
+                     <!--Header som holder seg på bunnen av siden. Når du hoverer over knappene spretter de nye boksene opp-->
 				<ul id="filmList">
 
 					<li class="meny"> <a href="#">Anbefalinger</a>
@@ -119,7 +123,7 @@
 						</div>
 					</li>
 
-					<li class="meny"> <a href="#">Rutiner for lån</a>
+					<li class="meny"> <a href="#">Rutiner for lån</a><!--pro012-->
 						<div id="rutineDrop">
 							<div id="rutineContent">
 								<div id="rutineText">

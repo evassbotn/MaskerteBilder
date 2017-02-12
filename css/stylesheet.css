@@ -95,17 +95,17 @@ body, html {/*skj006*/
 	justify-content: space-between;
 }
 
-.header a {
+.header a {/*Pro012*/
 	list-style-type: none;
 	text-decoration: none;
 	color: white;
 }
 
-.header ul {
+.header ul {/*Pro012*/
 	list-style-type: none;
 }
 
-.mainbar ul, .menyKnapp ul, .dropned {
+.mainbar ul, .menyKnapp ul, .dropned {/*Pro012*/
 	opacity: 0.8;
 
 	display: -webkit-box;
@@ -113,7 +113,7 @@ body, html {/*skj006*/
 	display: flex;
 }
 
-.mainbar ul {
+.mainbar ul {/*Pro012*/
 	width: 100%;
 
 	-webkit-box-pack: justify;
@@ -121,7 +121,7 @@ body, html {/*skj006*/
 	justify-content: space-between;
 }
 
-.mainbar li:hover {
+.mainbar li:hover {/*Pro012*/
 	font-size: 22px;
 	-webkit-transition-duration: 0.05s;
 	transition-duration: 0.05s;
@@ -157,11 +157,11 @@ body, html {/*skj006*/
 	width: 30%;
 }
 
-.menyKnapp {
+.menyKnapp {/*Pro012*/
 	margin-right: 2rem;
 }
 
-.dropned {
+.dropned {/*Pro012*/
 	background-color: black;
 	box-shadow: 0px 8px 16px 0px black;
 	position: absolute;
@@ -177,14 +177,14 @@ body, html {/*skj006*/
 	flex-direction: column;
 }
 
-.dropned a {
+.dropned a {/*Pro012*/
 	padding: 15px 15px;
 	text-decoration: none;
 	display: block;
 	border-radius: 10px;
 }
 
-#kaphe:hover .dropned {
+#kaphe:hover .dropned {/*Pro012*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -249,7 +249,7 @@ Her slutter header-elementer----------------------------------------------------
 	justify-content: center;
 }
 
-#teat {
+#teat {/*Pro012*/
 	height: 200px;
 }
 /*
@@ -282,7 +282,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	justify-content: space-between;*/
 }
 
-#filmList{
+#filmList{/*Pro012*/
     position: absolute;
     -webkit-transform: translate(-50%, 50%);
 	transform: translate(-50%, 50%);
@@ -312,12 +312,12 @@ Her slutter fyll-elementer------------------------------------------------------
 	justify-content: space-between;
 }
 
-.meny a{
+.meny a{/*Pro012*/
 	text-decoration: none;
 	color: white;
 }
 
-.dropOpp {
+.dropOpp {/*Pro012*/
 	background: rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1);
 	position: absolute;
@@ -331,7 +331,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	flex-direction: column;
 }
 
-.dropOpp a {
+.dropOpp a {/*Pro012*/
 	padding: 15px 15px;
 	text-decoration: none;
 	display: block;
@@ -339,7 +339,7 @@ Her slutter fyll-elementer------------------------------------------------------
     
 }
 
-.meny:hover .dropOpp {
+.meny:hover .dropOpp {/*Pro012*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -347,7 +347,7 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 
-#rutineDrop{
+#rutineDrop{/*Pro012*/
     background-color: black;
 	box-shadow: 0px 8px 16px 0px black;
 	position: absolute;
@@ -361,13 +361,13 @@ Her slutter fyll-elementer------------------------------------------------------
 	flex-direction: column;
 }
 
-#rutineDrop p{
+#rutineDrop p{/*Pro012*/
     padding: 15px 15px;
 	text-decoration: none;
 	display: block;
 	border-radius: 10px;
 }
-.meny:hover #rutineDrop {
+.meny:hover #rutineDrop {/*Pro012*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -375,13 +375,13 @@ Her slutter fyll-elementer------------------------------------------------------
     
 }
 
-#rutineText{
+#rutineText{/*Pro012*/
     font-size: 1.5vh;
 	text-align: center;
 	font-family: "Bebas Kai";	
 	color: white;
 }
-#rutineContent{
+#rutineContent{/*Pro012*/
 	background-color: rgba(0,0,0,0.5);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -402,7 +402,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	        align-items: baseline;
 	padding: 0 4px;
 }
-.miniContent{
+.miniContent{/*Pro012*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -424,11 +424,11 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 
-.miniPicture{
+.miniPicture{/*Pro012*/
     height: 10vh;
     max-width: 12vh;
 }
-.miniText{
+.miniText{/*Pro012*/
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
@@ -445,7 +445,7 @@ Her slutter fyll-elementer------------------------------------------------------
 }
 
 /* Posisjonerer spesifikk tekst på bildet */
-.tekstar{
+.tekstar{/*Pro012*/
 	-ms-flex-line-pack: center;
 	align-content: center;
 	float:center;
@@ -486,7 +486,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	transform: translate(-50%, -50%)
 }
 
-.content {
+.content {/*Pro012*/
 	width: 60%;
 	position: absolute;
 	margin-top: 15%;
@@ -503,7 +503,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	transform: translate(-50%, 25%)
 
 }
-.content1 {
+.content1 {/*Pro012*/
 	width: 60%;
 	position: absolute;
 	margin-top: 40%;
@@ -521,7 +521,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	transform: translate(-50%, 25%)
 
 }
-#restrainKnapp{
+#restrainKnapp{/*Pro012*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,46 +530,46 @@ Her slutter fyll-elementer------------------------------------------------------
             justify-content: center;
 }
 
-#leiKnapp{
+#leiKnapp{/*Pro012*/
     border-radius: 10px;
     background-color: lime;
     text-align: center;
     width: 5%;
     
 }
-#leiKnapp a{
+#leiKnapp a{/*Pro012*/
     color: black;
     text-decoration: none;
 }
-#leiKnapp:hover{
+#leiKnapp:hover{/*Pro012*/
     background-color: darkgreen;
 }
 
-.stjerner > span:hover:before {
+.stjerner > span:hover:before {/*Pro012*/
    content: "\2605";
    position: absolute;
     color: yellow;
 }
 
-.stjerner {
+.stjerner {/*Pro012*/
   unicode-bidi: bidi-override;
   direction: rtl;
     font-size: 2em;
     text-align: center;
 }
-.stjerner > span {
+.stjerner > span {/*Pro012*/
   display: inline-block;
   position: relative;
   width: 1.1em;
 }
 .stjerner > span:hover:before,
-.stjerner > span:hover ~ span:before {
+.stjerner > span:hover ~ span:before {/*Pro012*/
    content: "\2605";
    position: absolute;
     color: yellow;
 }
 /*Filmer*/
-.film-container { 
+.film-container {
 	padding: 0;
 	margin: 0;
 	
@@ -754,7 +754,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	}
 }
 
-@media (max-width: 650px) {/*skj006*/
+@media (max-width: 650px) {
 	/*mediaqueries som håndterer header på mobile enheter*/
 	.header {/*skj006*/
 		font-size: 3.2vw;
@@ -821,4 +821,13 @@ Her slutter fyll-elementer------------------------------------------------------
 	#teat {/*skj006*/
 		height: 30vw;
 	}
+    
+    .content{/*Pro012*/
+        margin-top: 30%;
+        font-size: 3vw;
+    }
+    .content1{/*Pro012*/
+        margin-top: 100%;
+        font-size: 3vw;
+    }
 }

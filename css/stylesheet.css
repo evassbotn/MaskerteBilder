@@ -1,106 +1,3 @@
-@media (max-width: 1000px) {
-	/*Håndterer filmer.html når mindre enn 1000px bredt*/
-	.movieContent {
-		flex-direction: column;
-	}
-
-	.moviePicture {
-		min-width: 80%;
-		order: 2;
-	}
-
-	.movieText {
-		min-width: 80%
-	}
-
-	.movieText a {
-		font-size: 1.5rem;
-	}
-}
-
-@media (max-width: 768px) {
-	/*Håndterer filmer.html når mindre enn iPad*/
-	.filmvisning {
-		min-width: 100%;
-	}
-}
-
-@media (max-width: 1200px) {
-	/*Fjerner bar på bunnen av index når skjerm blir for liten*/
-	#allContent {
-		display: none;
-	}
-}
-
-@media (max-width: 650px) {
-	/*mediaqueries som håndterer header på mobile enheter*/
-	.header {
-		font-size: 3.2vw;
-
-		height: auto;
-		min-height: 0;
-	}
-
-	.søkefelt {
-		margin: 0;
-
-		-webkit-box-flex: 1;
-		-ms-flex-positive: 1;
-		flex-grow: 1;
-	}
-
-	.søkefelt input[type=text] {
-		margin: 0;
-		width: 100%;
-
-		-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-        flex-grow: 1;
-	}
-
-	.søkefelt input[type=text]:focus {
-		width: 100%;
-	}
-
-	.mainbar, .mainbar *, #kaphe {
-		display: none;
-	}
-
-	.mobilMeny * {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-        flex-direction: column;
-	}
-
-	#mobildrop {
-		list-style-type: none;
-	}
-
-	.mobilMeny, #menyIkon, #menyIkon img {	
-		margin: 1px;
-
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
-
-	#mobildrop {
-		display: none;
-	}
-
-	.logo {
-		font-size: 5vw;
-	}
-
-	#teat {
-		height: 30vw;
-	}
-}
-
 body, html {
 	background: -webkit-repeating-linear-gradient(#cccccc,#dddddd,#eeeeee,#dddddd,#cccccc);
 	background: repeating-linear-gradient(#cccccc,#dddddd,#cccccc);
@@ -774,4 +671,107 @@ Her slutter fyll-elementer------------------------------------------------------
 	    align-self: center;
 	font-family: "Bebas Kai";
 	font-size: 6vh;
+}
+
+@media (max-width: 1000px) {
+	/*Håndterer filmer.html når mindre enn 1000px bredt*/
+	.movieContent {
+		flex-direction: column;
+	}
+
+	.moviePicture {
+		min-width: 80%;
+		order: 2;
+	}
+
+	.movieText {
+		min-width: 80%
+	}
+
+	.movieText a {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	/*Håndterer filmer.html når mindre enn iPad*/
+	.filmvisning {
+		min-width: 100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	/*Fjerner bar på bunnen av index når skjerm blir for liten*/
+	#allContent {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	/*mediaqueries som håndterer header på mobile enheter*/
+	.header {
+		font-size: 3.2vw;
+
+		height: auto;
+		min-height: 0;
+	}
+
+	.søkefelt {
+		margin: 0;
+
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+
+	.søkefelt input[type=text] {
+		margin: 0;
+		width: 100%;
+
+		-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+        flex-grow: 1;
+	}
+
+	.søkefelt input[type=text]:focus {
+		width: 100%;
+	}
+
+	.mainbar, .mainbar *, #kaphe {
+		display: none;
+	}
+
+	.mobilMeny * {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+        flex-direction: column;
+	}
+
+	#mobildrop {
+		list-style-type: none;
+	}
+
+	.mobilMeny, #menyIkon, #menyIkon img {	
+		margin: 1px;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	#mobildrop {
+		display: none;
+	}
+
+	.logo {
+		font-size: 5vw;
+	}
+
+	#teat {
+		height: 30vw;
+	}
 }

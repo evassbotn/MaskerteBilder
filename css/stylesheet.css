@@ -256,7 +256,9 @@ Her slutter header-elementer----------------------------------------------------
 Her slutter fyll-elementer---------------------------------------------------------
 */
 
-#allContent {/*skj006*/
+#allContent {
+
+    /*skj006*/
 	/*
     background-color: rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
@@ -286,7 +288,7 @@ Her slutter fyll-elementer------------------------------------------------------
     position: absolute;
     -webkit-transform: translate(-50%, 50%);
 	transform: translate(-50%, 50%);
-    margin-top: -5%;
+    margin-top: -7%;
     background-color: rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
 	font-size: 20px;
@@ -294,7 +296,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-family: "Bebas Kai";
 	list-style-type: none;/*skj006*/
 	min-height: 60px;
-	width: 100%;
+	width: 90%;
 	max-width: 1600px;
 	border-radius: 10px 10px 0 0;
 	display: -webkit-box;
@@ -310,6 +312,7 @@ Her slutter fyll-elementer------------------------------------------------------
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+    
 }
 
 .meny a{/*Pro012*/
@@ -714,6 +717,35 @@ Her slutter fyll-elementer------------------------------------------------------
 	font-family: "Bebas Kai";
 	font-size: 6vh;
 }
+@media screen and (max-width:1600px){/*Pro012*/
+    #filmList{/*Pro012*/
+    position: absolute;
+    margin-top: -7%;
+	font-size: 19px;
+	font-weight: 300;
+	width: 50%;
+
+}
+    
+    #rutineText{
+        font-size: 13px;
+    }
+    #rutineContent{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 1200px) {
+	    #filmList{/*Pro012*/
+    position: absolute;
+    margin-top: -10%;
+	font-size: 19px;
+	font-weight: 300;
+	width: 80%;
+
+}
+}
 
 @media (max-width: 1000px) {/*skj006*/
 	/*Håndterer filmer.html når mindre enn 1000px bredt*/
@@ -738,6 +770,8 @@ Her slutter fyll-elementer------------------------------------------------------
 	.movieText a {/*skj006*/
 		font-size: 1.5rem;
 	}
+    
+  
 }
 
 @media (max-width: 768px) {/*skj006*/
@@ -745,14 +779,12 @@ Her slutter fyll-elementer------------------------------------------------------
 	.filmvisning {/*skj006*/
 		min-width: 100%;
 	}
+    
 }
 
-@media (max-width: 1200px) {/*skj006*/
-	/*Fjerner bar på bunnen av index når skjerm blir for liten*/
-	#allContent {/*skj006*/
-		display: none;
-	}
-}
+
+	
+
 
 @media (max-width: 650px) {
 	/*mediaqueries som håndterer header på mobile enheter*/
@@ -830,4 +862,35 @@ Her slutter fyll-elementer------------------------------------------------------
         margin-top: 100%;
         font-size: 3vw;
     }
+}
+    
+    @media (max-width: 650px) {
+           #filmList{/*Pro012*/
+    position: absolute;
+    margin-top: -25%;
+	font-size: 13px;
+	font-weight: 300;
+	width: 90%;
+               margin-left: -2%;
+
+}
+        
+  #rutineText{/*Pro012*/
+    font-size: 1.5vh;
+        }
+        
+        #rutineContent{
+            width: auto;
+        }
+}
+
+   @media (max-width: 380px) {
+           #filmList{/*Pro012*/
+    position: absolute;
+    margin-top: -25%;
+	font-size: 10px;
+	font-weight: 300;
+	width: 90%;
+               margin-left: -2%;
+
 }

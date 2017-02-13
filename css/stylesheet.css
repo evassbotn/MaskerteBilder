@@ -27,7 +27,7 @@ body, html {/*skj006*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	
 
 	height: 100%;
 	width: 100%;
@@ -53,6 +53,7 @@ body, html {/*skj006*/
 #film-fyll { /*Unik for filmer-siden, siden fyll-div der må være lengre*//*skj006*/
 	height: auto;
 	min-height: 100%;
+    background-attachment: fixed;
 }
 
 .header { /*Pakker inn alle elementene i header*//*skj006*/
@@ -736,7 +737,7 @@ Her slutter fyll-elementer------------------------------------------------------
     }
 
 }
-
+ /*'Tilpasser under-baren på index-siden til Ipad*/ 
 @media (max-width: 1200px) {
 	    #filmList{/*Pro012*/
     position: absolute;
@@ -762,7 +763,7 @@ Her slutter fyll-elementer------------------------------------------------------
 		-webkit-box-ordinal-group: 3;
 		    -ms-flex-order: 2;
 		        order: 2;
-	}
+	}l
 
 	.movieText {/*skj006*/
 		min-width: 80%
@@ -864,7 +865,7 @@ Her slutter fyll-elementer------------------------------------------------------
         font-size: 3vw;
     }
 }
-    
+     /*'Tilpasser under-baren på index-siden til Smartelefon*/ 
     @media (max-width: 650px) {
            #filmList{/*Pro012*/
     position: absolute;
@@ -875,7 +876,7 @@ Her slutter fyll-elementer------------------------------------------------------
                margin-left: -2%;
 
 }
-        
+    /*'Tilpasser under-baren på index-siden til Smartelefon*/    
   #rutineText{/*Pro012*/
     font-size: 1.5vh;
         }
@@ -884,6 +885,7 @@ Her slutter fyll-elementer------------------------------------------------------
             width: auto;
         }
 }
+/*'Tilpasser under-baren på index-siden til iphone 5 og galaxy s5*/
 
    @media (max-width: 380px) {
            #filmList{/*Pro012*/

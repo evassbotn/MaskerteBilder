@@ -339,7 +339,6 @@ Her slutter fyll-elementer------------------------------------------------------
 	text-decoration: none;
 	display: block;
 	border-radius: 10px;
-    
 }
 
 .meny:hover .dropOpp {/*Pro012*//*eva028*/
@@ -675,7 +674,9 @@ Her slutter fyll-elementer------------------------------------------------------
         align-self: center;
 	max-height: 80vh;/*skj006*/
 	max-width: 15vw;/*skj006*/
-	flex: 1 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1;
+	        flex: 1 1;/*Fungerer antagelig ikke i Safari*//*skj006*/
 
 }
 #oneHead { /*eva028*/
